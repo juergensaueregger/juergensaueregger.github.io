@@ -4,6 +4,9 @@ body {
 }
 
 .site {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 300px;
     line-height: 1.7em;
     letter-spacing: 0px;
     font-weight: 400;
@@ -17,16 +20,6 @@ header {
     position: relative;
     text-align: center;
     width: 100%;
-
-
-
-}
-
-.nav {
-    margin: 0 0;
-    padding: 0 0;
-
-
 }
 
 h1 {
@@ -91,4 +84,25 @@ h1 {
 
 .yellow {
     color: #b58900;
+}
+
+
+.menu ul {
+    padding: 0;
+    margin-block-start: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: ;
+}
+
+#nicepic{
+    margin: auto;
 }
