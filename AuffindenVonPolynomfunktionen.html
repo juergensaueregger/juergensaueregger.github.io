@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Auffinden von Polynomfunktionen(Umgekehrte Kurvendiskusion)</title>
+</head>
+
+<body>
+    <h2>Auffinden von Polynomfunktionen(Umgekehrte Kurvendiskusion)</h2>
+    <h3>Um was geht es:</h3>
+    <p>
+        Bis jetzt war es meistens so dass eine Funktion gebeben war, und wir mit Hilfe von Gleichungen und der Differentialrechnung
+        bestimmte Eigenenschaften der Funktion bestimmen wollten. Zum Beispiel, gegeben ist die Funktion \( f(x)=x^2-3x+10\) und gesucht
+        ist die Nullstelle, oder der Wendepunkt und so weiter.
+    </p>
+    <p>
+        Beim Auffinden von Polynomfunktionen, ist es genau umgekehrt. Gegeben ist der Typ der Funktion, zum Beispiel "Polynomfunktion 3. Grades", und
+        einige Eigenschafen. Gesucht wird jetzt die Funktion die alle diese Eigenschaften erfüllt und vom gegebenen Typ ist.
+    </p>
+    <p>
+        Das erste das einen da natürlich einfallen könnte,
+        ist das es vielleicht mehrere solche Funktionen geben könnte, also das man diese Aufgaben nicht 
+        eindeutig lösen kann. Das ist auch richtig! Aber wir werden nur ganz bestimmte Funktionen betrachten, 
+        und auch immer genau die richtig Anzahl von Eigenschafen vorgeben, damit sich das alles eindeutig ausgeht.
+    </p>
+    <h3>Wie geht das:</h3>
+    <h4>Ein Beispiel sagt oft mehr als tausend Worte...</h4>
+    <p>
+        <strong>Angabe:</strong> Bestimme die Polynomfunktion 2 Grades, die durch den Punkt A(2/3) geht und bei H(7/4) einen Hochpunkt hat.
+    </p>
+    <p>
+    <strong>Lösung:</strong> Okay, also eine Polynomfunktion 2.Grades ist gesucht, wir kennen die auch als quadratische Funktionen,
+     die allgemeinste Form die diese haben können lautet:
+         $$ f(x)=ax^2+bx+c $$
+    Diese Funktionsvorlage hat 3 Parameter \(a,b,c\) und für jede Belegung dieser 3 ergibt sich eine andere Polynomfunktion.
+         Unsere Aufgabe ist es also herauszufinden welche Wahl von \(a,b,c\) die richtige ist, so dass die gegebenen Bedingungen erfüllt sind.
+    </p>
+    <p>
+        Um <strong>3 Parameter</strong> eindeutig zu bestimmen, brauchen wir <strong> 3 Gleichungen</strong>.
+        Nicht das es damit schon immer eindeutig lösbar ist, aber mit weniger geht es sicher nicht.
+        Und mehr sind nicht notwendig, beziehungsweise könnten sie das Beispiel auch unlösbar machen.
+    </p>
+    <p>Aus der Angabe lesen wir das die Funktion durch die Punkte A(2/3) und H(7/4) verläuft. Das lässt sich als folgende Gleichungen schreiben.
+        <ul>
+            <li>\(f(2)=3\) oder \( a\cdot 2^2+b\cdot 2+c=3\)</li>
+            <li>\(f(7)=4\) oder \( a\cdot 7^2+b\cdot 7+c=4\)</li>
+        </ul>
+        Des weiteren wissen wir das H(7/4) ein Hochpunkt ist, das bedeutet das dort die Funktion eine waagrechte Tangente besitzt, und das wiederum bedeutet das ihre Steigung dort null ist, beziehungsweise das folgende Gleichung gilt:
+        <ul>
+            <li>\(f'(7)=0 \) oder \(2\cdot a \cdot 7 + b = 0\)</li>
+        </ul>
+    </p>
+    <p> Es bleibt nur mehr das entstandene Gleichungssystem zu lösen:
+        <ol>
+            <li> \( a\cdot 4+b\cdot 2+c=3\)</li>
+            <li> \( a\cdot 49 +b\cdot 7+c=4\)</li>
+            <li> \(a \cdot 14 + b       = 0\)</li>
+        </ol>
+    </p>
+    <p>
+        Das <a href="video/auffinden1.mp4">Video</a> zeigt euch wie ihr das mit Geogebra machen könnt.
+        Die gesuchte Funktion lautet also: 
+        $$ f(x)=-\frac{1}{25}x^(2)+\frac{14}{25}x+\frac{51}{25} $$
+    </p>
+    <h4>Wie lese ich aus dem Text die Eigenschaften heraus: </h4>
+    <p>Im obigen Beispiel haben wir gesehen der Schlüssel zur Lösung der Aufgabe ist 
+        das finden der notwendigen Bedingungen, hier ein paar Beispiele die euch helfen sollten:
+        <ul>
+            <li> 
+                P(4/7) ist ein Punkt auf der Funktion:  => \(f(4)=7\)
+            </li>
+            <li>H(5/6) ist ein Hochpunkt oder Tiefpunkt: => das ergibt zwei Bedingungen: \(f(5)=6\) und \(f'(5)=0 \)</li>
+            <li>W(1/2) ist ein Wendepunkt: => das ergibt zwei Bedingungen: \(f(1)=2\) und \(f''(2)=0 \)</li>
+            <li>\(f(x)\) hat an der Stelle 3, die Steigung 7: => \(f(3)=7\)</li>
+            <li>\(f(x)\) hat an der Stelle 2 eine waagrechte Tangente: => \(f'(2)=0\)</li>
+            <li>\(f(x)\) berührt die x-Achse bei -1: => das ergibt zwei Bedingungen: => \(f(-1)=0\) und \(f'(-1)=0\) </li>
+            <li>\(f(x)\) hat bei 3 einen Steigungswinkel von 23 Grad: => \(f'(3)=\tan(23)\)</li>
+            <li>die Tangente von \(f(x)\) an der Stelle 4 ist \(2x+3y=10\): => 
+                Zuerst die Tangente auf die Form \(y=k\cdot x+d\) bringen, also 
+                $$ y = -\frac{2}{3}x+\frac{10}{3} $$
+                Die Tangente und die Funktion hat an der Stelle 4, den selben Funktionswert als auch die selbe Steigung.
+                Somit gelten folgende Bedingungen:  \(f(3)=\frac{4}{10}\) und \(f'(3)=-\frac{2}{3}\)
+            </li>
+        </ul>
+    </p>
+    <h4>Zusammenfassung:</h4>
+    <p>
+        Das Ergebnis beim auffinden von Polynomfunktionen sind Polynomfunktionen, von der einige Eigenschaften vorgegeben sind.
+        So geht man am besten vor:
+        <ul>
+            <li>Bestimmen der abstrakten Form der gesuchten Polynomfunktion(Welcher Grad, usw.)</li>
+            <li>Die Anzahl der Parameter bestimmt die Anzahl der nötigen Bedingungen</li>
+            <li>Die Bedingungen aus dem Text herausfinden und notieren.</li>
+            <li>Durch einsetzen in die abstrakte Form der Funktion entsteht ein Gleichungssystem.</li>
+            <li>Lösen des Gleichungssystems, mittels Geogebra oder Taschenrechner und einsetzen der gefunden Lösungen in die abstrakte Form.</li>
+        </ul>
+    </p>
+
+
+
+</body>
+
+</html>
