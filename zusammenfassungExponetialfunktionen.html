@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exponentialfunktionen - Merkblatt</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <h2 class="title">Exponentialfunktionen - Zusammenfassung </h2>
+    <section class="section">
+      <div class="container">
+        <h3 class="subtitle_1">Was sind Exponentialfunktionen:</h3>
+        <p>Exponentialfunktionen sind Funktionen, die sich durch eine bestimmte konstante prozentuelle Wachstumsrate auszeichnen. Sie sind entweder streng monoton steigend oder streng monoton fallend auf ihren ganzen Definitionsbereich.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h3 class="subtitle_1">Form der Exponentialfunktion:</h3>
+        <p>Die allgemeine Form einer Exponentialfunktion ist:</p>
+        <p class="formula">$$f(x)=c\cdot a^x$$</p>
+        <p> oder </p>
+        <p class="formula">$$f(x)=c\cdot e^{\lambda x}$$</p>
+        <p> Dabei sind c, a und λ Konstanten, die die Eigenschaften der Funktion bestimmen.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h3 class="subtitle_1">Bedeutung der Parameter:</h3>
+        <p>Die Parameter c, a und λ haben folgende Bedeutungen:</p>
+        <ul class="list">
+          <li class="list-item"><b>c:</b> Der y-Achsenabschnitt der Exponentialfunktion. Das ist der Wert der Funktion, wenn x = 0 ist.</li>
+          <li class="list-item"><b>a:</b> Die Basis der Exponentialfunktion. Dieser Wert bestimmt das Wachstum oder den Rückgang der Funktion. Wenn a > 1 ist, wächst die Funktion exponentiell. Wenn a zwischen 0 und 1 liegt, nimmt die Funktion exponentiell ab.</li>
+          <li class="list-item"><b>λ:</b> Der Exponentialfaktor, der die Steigung der Exponentialfunktion bestimmt. Wenn λ positiv ist, steigt die Funktion exponentiell an. Wenn λ negativ ist, nimmt die Funktion exponentiell ab.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h3 class="subtitle_1">Halbwertszeit und Verdopplungszeit:</h3>
+        <p>Die Halbwertszeit und Verdopplungszeit sind wichtige Kennzahlen, die verwendet werden, um das Wachstum oder den Rückgang einer Exponentialfunktion zu beschreiben. Die Halbwertszeit ist die Zeit, die benötigt wird, um den Funktionswert auf die Hälfte des Ausgangswertes zu reduzieren. Die Verdopplungszeit ist die Zeit, die benötigt wird, um den Funktionswert zu verdoppeln.</p>
+        <p>Die Formel zur Berechnung der Halbwertszeit lautet:</p>
+        <p class="formula">$$t_{1/2}=\frac{\ln(2)}{\lambda}$$</p>
+        <p>Die Formel zur Berechnung der Verdopplungszeit lautet:</p>
+        <p class="formula">$$t_{\text{Verdopplung}}=\frac{\ln(2)}{\ln(a)}$$</p>
+        <p> Dabei ist λ der Exponentialfaktor und a die Basis der Exponentialfunktion.</p>
+        <p>Wenn das prozentuelle Wachstum pro Einheit bei einer Exponentialfunktion bekannt ist, kann man die Variablen a bzw. λ berechnen:</p>
+        <p>Bei der Form $$f(x)=c\cdot a^x$$</p>
+        <p>lässt sich a berechnen durch:</p>
+        <p class="formula">$$a=1+\frac{p}{100}$$</p>
+        <p>Bei der Form $$f(x)=c\cdot e^{\lambda x}$$</p>
+        <p>lässt sich λ berechnen durch:</p>
+        <p class="formula">$$\lambda = \ln(1+\frac{p}{100})$$</p>
+        <p>Dabei steht p für das prozentuelle Wachstum pro Einheit.</p>
+      </div>
+    </section>
+</body>
+</html>
