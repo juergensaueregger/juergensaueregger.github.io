@@ -23,16 +23,27 @@ header {
     width: 100%;
 }
 
-h1 {
+h2 {
     line-height: 1em;
     text-transform: uppercase;
     letter-spacing: 10px;
     font-weight: 700;
     font-style: normal;
-    font-size: 80px;
+    font-size: 20px;
     text-align: center;
     display: block;
     margin: 0 auto 28px;
+}
+
+h3 {
+    line-height: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: 28px auto 28px;
 }
 
 
