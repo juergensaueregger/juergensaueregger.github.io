@@ -5,9 +5,6 @@ body {
 }
 
 .site {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr 300px;
     line-height: 1.7em;
     letter-spacing: 0px;
     font-weight: 400;
@@ -15,6 +12,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 
 header {
 
@@ -59,7 +57,7 @@ h3 {
 }
 
 .base01 {
-    color: #586e75;
+    color: rgb(240, 240, 240);
 }
 
 .base00 {
@@ -103,12 +101,13 @@ h3 {
     padding: 0;
     margin-block-start: 0;
     margin: 0;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .menu li{
     list-style: none;
+    margin: auto;
 }
 
 .menu a{
@@ -116,5 +115,13 @@ h3 {
 }
 
 #nicepic{
+    margin: auto auto;
+    margin-top: 3em;
+    display: block;
+}
+
+
+.lernunterlagen li{
+    list-style: none;
     margin: auto;
 }
