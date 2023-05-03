@@ -100,12 +100,13 @@ h3 {
 .menu ul {
     padding: 0;
     margin-block-start: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    text-align: center;
+    
 }
 
 .menu li{
+    display: inline-block;
     list-style: none;
     margin: auto;
 }
@@ -120,9 +121,30 @@ h3 {
     display: block;
 }
 
+#pictureit{
+    margin: auto auto;
+    margin-top: 3em;
+    display: block;
+    max-height: 400px;
+}
+
 
 .lernunterlagen li{
     list-style: none;
     margin: auto;
 }
+
+h2.nachhilfeonline {
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto 28px;
+}
+
+
 

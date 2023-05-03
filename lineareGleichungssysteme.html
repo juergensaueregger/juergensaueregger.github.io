@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Lineare Gleichungssysteme mit 2 Variablen</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<h1>Lineare Gleichungssysteme mit 2 Variablen</h1>
+<p>Ein <strong>lineares Gleichungssystem</strong> ist eine Sammlung von linearen Gleichungen, die gemeinsam gelöst werden müssen. Bei linearen Gleichungssystemen mit zwei Variablen gibt es zwei Gleichungen mit zwei Unbekannten, normalerweise \(x\) und \(y\). Ein solches Gleichungssystem hat die allgemeine Form:</p>
+\[
+\displaylines{
+a_1x + b_1y = c_1 \\
+a_2x + b_2y = c_2
+}
+\]
+<h2>Lösungsfälle</h2>
+<p>Es gibt drei mögliche Lösungen für lineare Gleichungssysteme mit zwei Variablen:</p>
+<ol>
+  <li>Genau eine Lösung (Schnittpunkt der beiden Geraden)</li>
+  <li>Keine Lösung (parallele Geraden)</li>
+  <li>Unendlich viele Lösungen (identische Geraden)</li>
+</ol>
+<p>Die Lösungsfälle hängen von den Parametern \(a_1\), \(b_1\), \(c_1\), \(a_2\), \(b_2\) und \(c_2\) ab:</p>
+
+<strong>\[ \frac{a_1}{a_2} \neq \frac{b_1}{b_2} \]</strong>
+<p>die beiden Geraden haben unterschiedliche Steigungen und <strong>schneiden sich in genau einem Punkt</strong>. In diesem Fall gibt es <strong>genau eine Lösung</strong>.</p>
+\[ \frac{a_1}{a_2} = \frac{b_1}{b_2} \neq \frac{c_1}{c_2}\]
+<p>die beiden Geraden sind <strong>parallel zueinander</strong> und haben keinen gemeinsamen Schnittpunkt. In diesem Fall gibt es<strong> keine Lösung</strong>.</p>
+\[\frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{c_1}{c_2}\]
+<p>die beiden Geraden sind <strong>identisch</strong>, und es gibt unendlich viele gemeinsame Punkte. In diesem Fall gibt es <strong>unendlich viele Lösungen</strong>.</p>
+<h2>Lösungsverfahren</h2>
+<p>Um lineare Gleichungssysteme mit zwei Variablen zu lösen, gibt es verschiedene Verfahren, darunter das Additionsverfahren, das Substitutionsverfahren und das Komparationsverfahren. Im Folgenden werden diese Verfahren mit Beispielen vorgestellt.</p>
+<h2>Additionsverfahren</h2>
+<p>Beim <strong>Additionsverfahren</strong> werden die Gleichungen so manipuliert, dass eine der Variablen eliminiert wird, indem die Gleichungen addiert oder subtrahiert werden. Hier ist ein Beispiel:</p>
+<p>Gegeben ist das folgende lineare Gleichungssystem:</p>
+\[
+\begin{cases}
+2x + 3y = 7 \\
+4x - 3y = 5
+\end{cases}
+\]
+<p>Wir addieren die beiden Gleichungen, um die Variable \(y\) zu eliminieren:</p>
+\[
+6x = 12 \quad \Rightarrow \quad x = 2
+\]
+<p>Nun setzen wir den Wert von \(x\) in die erste Gleichung ein, um \(y\) zu berechnen:</p>
+\[
+2(2) + 3y = 7 \quad \Rightarrow \quad 3y = 3 \quad \Rightarrow \quad y = 1
+\]
+<p>Die Lösung des Gleichungssystems ist \((x, y) = (2, 1)\).</p>
+<h2>Substitutionsverfahren</h2>
+<p>Beim <strong>Substitutionsverfahren</strong> wird eine der Variablen in einer der Gleichungen isoliert und dann in die andere Gleichung eingesetzt, um das Gleichungssystem zu lösen. Hier ist ein Beispiel:</p>
+<p>Gegeben ist das folgende lineare Gleichungssystem:</p>
+\[
+\begin{cases}
+x + 2y = 4 \\
+3x - 4y = 1
+\end{cases}
+\]
+<p>Wir isolieren \(x\) in der ersten Gleichung:</p>
+\[
+x = 4 - 2y
+\]
+<p>Nun setzen wir den Ausdruck für \(x\) in die zweite Gleichung ein:</p>
+\[
+3(4 - 2y) - 4y = 1 \quad \Rightarrow \quad 12 - 6y - 4y = 1 \quad \Rightarrow \quad -10y = -11 \quad \Rightarrow \quad y = \frac{11}{10}
+\]
+<p>Jetzt setzen wir den Wert von \(y\) in den Ausdruck für \(x\) ein, um \(x\) zu berechnen:</p>
+\[
+x = 4 - 2\left(\frac{11}{10}\right) = \frac{8}{10} = \frac{4}{5}
+\]
+<p>Die Lösung des Gleichungssystems ist \((x, y) = \left(\frac{4}{5}, \frac{11}{10}\right)\).</p>
+<h2>Komparationsverfahren</h2>
+<p>Beim <strong>Komparationsverfahren</strong> werden beide Gleichungen so umgeformt, dass eine der Variablen alleine auf einer Seite steht. Anschließend werden die Gleichungen gleichgesetzt, und das System wird gelöst. Hier ist ein Beispiel:</p>
+<p>Gegeben ist das folgende lineare Gleichungssystem:</p>
+\[
+\begin{cases}
+3x - 2y = 6 \\
+6x + 4y = 8
+\end{cases}
+\]
+<p>Wir bringen in beiden Gleichungen \(y\) auf eine Seite und erhalten:</p>
+\[
+y = \frac{3}{2}x - 3 \quad \text{und} \quad y = -\frac{3}{2}x + 2
+\]
+<p>Nun setzen wir die beiden Ausdrücke für \(y\) gleich und lösen nach \(x\):</p>
+\[
+\frac{3}{2}x - 3 = -\frac{3}{2}x + 2 \quad \Rightarrow \quad 3x = 5 \quad \Rightarrow \quad x = \frac{5}{3}
+\]
+<p>Zum Schluss setzen wir den Wert von \(x\) in einen der Ausdrücke für \(y\) ein, um \(y\) zu berechnen:</p>
+\[
+y = \frac{3}{2}\left(\frac{5}{3}\right) - 3 = \frac{5}{2} - 3 = -\frac{1}{2}
+\]
+<p>Die Lösung des Gleichungssystems ist \((x, y) = \left(\frac{5}{3}, -\frac{1}{2}\right)\).</p>
+<p>Das Additionsverfahren, das Substitutionsverfahren und das Komparationsverfahren sind wichtige Methoden zur Lösung linearer Gleichungssysteme mit zwei Variablen. Jede Methode hat ihre eigenen Vorteile, und es ist hilfreich, alle drei zu beherrschen, um Gleichungssysteme effizient lösen zu können.</p>
+</body>
+</html>
