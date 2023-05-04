@@ -109,10 +109,11 @@ h3 {
     display: inline-block;
     list-style: none;
     margin: auto;
+    padding-left: 10px;
 }
 
 .menu a{
-    text-decoration: ;
+    text-decoration: none‚;
 }
 
 #nicepic{
